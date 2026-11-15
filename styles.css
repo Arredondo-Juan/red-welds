@@ -138,11 +138,6 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 12px; 
 .work-tall { grid-row: 1 / span 2; }
 .work-square img { object-position: 50% 45%; }
 
-/* Shop */
-.shop-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 6vw, 96px); align-items: center; }
-.shop-photo img { aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 60%; width: 100%; }
-.shop-copy p { max-width: 32em; }
-.shop-copy .text-link { margin-top: 12px; }
 
 /* Quote: field of red */
 .quote { margin-top: var(--gap-section); padding: clamp(64px, 9vw, 128px) 0; background: var(--red); color: var(--on-red); }
@@ -180,7 +175,12 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 12px; 
 .quote-actions .btn-outline-light:hover { border-color: var(--ink); background: transparent; }
 
 /* Contact */
-.contact-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(32px, 5vw, 80px); align-items: end; }
+.contact-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 6vw, 96px); align-items: center; }
+.contact-photo img { aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 60%; width: 100%; }
+.contact-copy .phone-big { font-size: clamp(3rem, 6.4vw, 6rem); }
+.contact-copy .section-sub { max-width: 30em; }
+.contact-copy .text-link { margin: 4px 0 36px; }
+.contact-copy .hours { max-width: 520px; }
 .phone-big {
   display: block; font-family: var(--display); font-size: var(--fs-display); line-height: 1;
   text-decoration: none; margin: 0 0 20px; transition: color .15s;
@@ -217,7 +217,7 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 12px; 
 /* Responsive */
 @media (max-width: 960px) {
   .nav { display: none; }
-  .hero-inner, .services-inner, .shop-inner, .quote-inner, .contact-inner { grid-template-columns: 1fr; }
+  .hero-inner, .services-inner, .quote-inner, .contact-inner { grid-template-columns: 1fr; }
   .hero-inner { min-height: 0; }
   .hero-photo { height: auto; min-height: 0; aspect-ratio: 4 / 5; max-height: 80svh; }
   .services-photo { position: static; }
