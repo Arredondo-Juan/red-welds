@@ -3,9 +3,10 @@
 A one-page static site for Red Welds (welding & metal fabrication). No build step: just HTML, CSS and images.
 
 ## Files
-- `index.html`: page content (services, about, hours, contact)
+- `index.html`: page content (services, recent work, the shop, quote texter, hours)
 - `styles.css`: all styling
-- `images/`: shop photo, logo, favicons
+- `script.js`: the "Text us the job" message builder, scroll reveals, mobile call bar
+- `images/`: job photos (each at 800px and 1400px), shop photo, logo, favicons
 
 ## Preview
 Open `index.html` in a browser.
@@ -14,7 +15,8 @@ Open `index.html` in a browser.
 - **Shop hours**: currently Mon–Fri 9–5, Sat by appointment, Sun closed (only "opens 9 AM Mon" was confirmed)
 - **Services list**: adjust to what the shop actually offers
 - **Service area / address**: not listed yet
-- Add real job photos to show off the work
+- **Photo captions** in the Recent work section
+- More job photos can be dropped into `images/` and added to the Recent work grid
 
 ## Publish for free with GitHub Pages
 Repo **Settings → Pages → Source: Deploy from a branch → `main` / root**.

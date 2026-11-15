@@ -3,27 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Red Welds | Welding &amp; Metal Fabrication</title>
-  <meta name="description" content="Red Welds is a local welding and metal fabrication shop. Repairs, custom fabrication, trailers, gates and mobile welding. Call or text (479) 601-2786.">
-  <meta name="theme-color" content="#0b0b0c">
-  <meta property="og:title" content="Red Welds | Welding &amp; Metal Fabrication">
-  <meta property="og:description" content="Repairs, custom fabrication and mobile welding. Call or text (479) 601-2786.">
-  <meta property="og:image" content="images/shop.jpg">
+  <title>Red Welds | Welding, Trailer Repair &amp; Fabrication</title>
+  <meta name="description" content="Red Welds does repair welding, trailer work, custom fabrication and on-site industrial welding. Call or text (479) 601-2786.">
+  <meta name="theme-color" content="#0d0d0e">
+  <meta property="og:title" content="Red Welds | Welding, Trailer Repair &amp; Fabrication">
+  <meta property="og:description" content="Repair welding, trailer work, custom fabrication and on-site welding. Call or text (479) 601-2786.">
+  <meta property="og:image" content="images/overhead-sparks-1400.jpg">
   <meta property="og:type" content="website">
   <link rel="icon" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Red Welds",
-    "description": "Welding and metal fabrication: repairs, custom fabrication, trailers, gates and mobile welding.",
+    "description": "Repair welding, trailer work, custom fabrication and on-site industrial welding.",
     "telephone": "+1-479-601-2786",
-    "image": "images/shop.jpg",
+    "image": "images/overhead-sparks-1400.jpg",
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3" }
   }
   </script>
@@ -37,9 +38,9 @@
       </a>
       <nav class="nav" aria-label="Main">
         <a href="#services">Services</a>
-        <a href="#shop">The Shop</a>
-        <a href="#process">How It Works</a>
-        <a href="#contact">Contact</a>
+        <a href="#work">Work</a>
+        <a href="#shop">The shop</a>
+        <a href="#quote">Get a quote</a>
       </nav>
       <a class="btn btn-red btn-sm header-call" href="tel:+14796012786">Call (479) 601-2786</a>
     </div>
@@ -48,130 +49,166 @@
   <main id="top">
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="spark"></span>Welding &amp; Fabrication</p>
-          <h1>Built strong.<br><span class="red">Welded right.</span></h1>
-          <p class="lede">From broken trailer hitches to custom gates and one-off builds, Red Welds does honest, solid metal work out of our own shop, or we come to you.</p>
-          <div class="cta-row">
+          <h1 data-reveal>Built strong. Welded right.</h1>
+          <p class="lede" data-reveal>Red Welds does repair welding, trailer work, custom fabrication and on-site welding for plants and job sites. Bring it to the shop or we come to you.</p>
+          <div class="cta-row" data-reveal>
             <a class="btn btn-red" href="tel:+14796012786">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
-              Call for a quote
+              Call (479) 601-2786
             </a>
-            <a class="btn btn-ghost" href="sms:+14796012786">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
-              Text a photo of the job
-            </a>
+            <a class="btn btn-ghost" href="#quote">Text us a photo</a>
           </div>
-          <ul class="trust">
-            <li><strong>5.0</strong> <span class="stars" aria-label="5 out of 5 stars">★★★★★</span> on Google</li>
-            <li>Shop &amp; mobile service</li>
-            <li>Free estimates</li>
-          </ul>
+          <p class="rating-line" data-reveal>
+            <span class="stars" role="img" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 120 22" aria-hidden="true"><g fill="currentColor"><path id="s" d="M11 1l3 6.5 7 .8-5.2 4.8 1.4 7L11 16.6 4.8 20.1l1.4-7L1 8.3l7-.8z"/><use href="#s" x="24"/><use href="#s" x="48"/><use href="#s" x="72"/><use href="#s" x="96"/></g></svg>
+            </span>
+            Rated 5.0 on Google
+          </p>
         </div>
-        <figure class="hero-photo">
-          <img src="images/shop.jpg" alt="The Red Welds shop: a dark steel building with the Red Welds sign above the garage door" width="1086" height="1448">
+        <figure class="hero-photo" data-reveal>
+          <img src="images/overhead-sparks-1400.jpg"
+               srcset="images/overhead-sparks-800.jpg 800w, images/overhead-sparks-1400.jpg 1400w"
+               sizes="(max-width: 960px) 100vw, 50vw"
+               alt="Welder in a harness on a ladder, stick welding a steel channel overhead with sparks falling"
+               width="1400" height="1867" fetchpriority="high">
         </figure>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow"><span class="spark"></span>What we do</p>
-          <h2>Services</h2>
-          <p class="section-sub">If it's metal and it's broken, bent, or still just an idea, give us a call.</p>
-        </div>
-        <div class="grid services">
-          <article class="card">
-            <span class="num">01</span>
-            <h3>Repair Welding</h3>
-            <p>Cracked frames, broken brackets, snapped hitches, worn equipment. We fix it so it holds.</p>
-          </article>
-          <article class="card">
-            <span class="num">02</span>
-            <h3>Custom Fabrication</h3>
-            <p>Built to your measurements: racks, brackets, tables, stairs, railings and one-off projects.</p>
-          </article>
-          <article class="card">
-            <span class="num">03</span>
-            <h3>Trailers &amp; Truck Work</h3>
-            <p>Trailer repair and upgrades, bumpers, headache racks, ramps and hitch work.</p>
-          </article>
-          <article class="card">
-            <span class="num">04</span>
-            <h3>Farm &amp; Ranch</h3>
-            <p>Gates, pipe fence, cattle panels, implement and equipment repair to keep you running.</p>
-          </article>
-          <article class="card">
-            <span class="num">05</span>
-            <h3>Mobile Welding</h3>
-            <p>Can't haul it in? We'll bring the welder to your property, job site or field.</p>
-          </article>
-          <article class="card">
-            <span class="num">06</span>
-            <h3>MIG, TIG &amp; Stick</h3>
-            <p>Steel, stainless and aluminum. The right process for the material and the job.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHOP / ABOUT -->
-    <section id="shop" class="section section-dark">
-      <div class="wrap about">
-        <div class="about-logo">
-          <img src="images/logo.png" alt="Red Welds logo" width="800" height="696" loading="lazy">
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow"><span class="spark"></span>The shop</p>
-          <h2>Local, hands-on, <span class="red">and here to stay.</span></h2>
-          <p>Red Welds is a local welding business that just moved into a brand new shop with room for bigger projects. When you call, you talk to the welder doing the work, not a call center.</p>
-          <p>We care about clean, strong welds, fair prices and getting your equipment back to you when we said we would.</p>
-          <ul class="checks">
-            <li>Owner-operated</li>
-            <li>Straight answers and upfront quotes</li>
-            <li>Small jobs welcome</li>
+    <section id="services" class="section services">
+      <div class="wrap services-inner">
+        <div class="services-copy">
+          <h2 data-reveal>What we weld</h2>
+          <p class="section-sub" data-reveal>If it's metal and it's broken, worn out or still just an idea, give us a call.</p>
+          <ul class="service-list">
+            <li data-reveal>
+              <h3>On-site &amp; industrial</h3>
+              <p>Overhead and at-height work inside plants and facilities, tied off and done safely.</p>
+            </li>
+            <li data-reveal>
+              <h3>Trailer repair &amp; builds</h3>
+              <p>Gates, ramps, tongues, frames and toolbox mounts, welded and painted.</p>
+            </li>
+            <li data-reveal>
+              <h3>Repair welding</h3>
+              <p>Cracked frames, broken brackets, snapped hitches and worn equipment, fixed to hold.</p>
+            </li>
+            <li data-reveal>
+              <h3>Structural &amp; supports</h3>
+              <p>Brackets, beams, channel and pipe supports for shops and facilities.</p>
+            </li>
+            <li data-reveal>
+              <h3>Custom fabrication</h3>
+              <p>Racks, tables, stairs, railings and one-off builds made to your measurements.</p>
+            </li>
+            <li data-reveal>
+              <h3>Mobile welding</h3>
+              <p>Can't haul it in? We bring the welder to your property, job site or field.</p>
+            </li>
           </ul>
         </div>
+        <figure class="services-photo" data-reveal>
+          <img src="images/weld-bead-1400.jpg"
+               srcset="images/weld-bead-800.jpg 800w, images/weld-bead-1400.jpg 1400w"
+               sizes="(max-width: 960px) 100vw, 40vw"
+               alt="Close-up of a smooth, evenly stacked weld bead along a steel joint"
+               width="1400" height="1867" loading="lazy">
+          <figcaption>An even, stacked bead: the kind of weld we put our name on.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section id="process" class="section">
+    <!-- WORK -->
+    <section id="work" class="section work">
       <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow"><span class="spark"></span>Easy as 1-2-3</p>
-          <h2>How it works</h2>
+        <div class="work-head">
+          <h2 data-reveal>Recent work</h2>
+          <p class="section-sub" data-reveal>From food-plant maintenance to the trailer in your driveway.</p>
         </div>
-        <ol class="steps">
-          <li>
-            <h3>Send a photo</h3>
-            <p>Text us a picture of the job and a quick description, or just call.</p>
-          </li>
-          <li>
-            <h3>Get a quote</h3>
-            <p>We'll give you a straight price and a timeline before any work starts.</p>
-          </li>
-          <li>
-            <h3>We weld it</h3>
-            <p>Drop it at the shop or we come to you. Done right, the first time.</p>
-          </li>
-        </ol>
+        <div class="work-grid">
+          <figure class="work-tall" data-reveal>
+            <img src="images/plant-welding-1400.jpg"
+                 srcset="images/plant-welding-800.jpg 800w, images/plant-welding-1400.jpg 1400w"
+                 sizes="(max-width: 960px) 100vw, 50vw"
+                 alt="Welder in a harness welding the underside of a stainless structure inside a processing plant"
+                 width="1400" height="1867" loading="lazy">
+            <figcaption>Overhead repair inside a working processing plant</figcaption>
+          </figure>
+          <figure class="work-wide" data-reveal>
+            <img src="images/trailer-gate-1400.jpg"
+                 srcset="images/trailer-gate-800.jpg 800w, images/trailer-gate-1400.jpg 1400w"
+                 sizes="(max-width: 960px) 100vw, 50vw"
+                 alt="Black steel rear gate with expanded-metal mesh on a utility trailer"
+                 width="1400" height="933" loading="lazy">
+            <figcaption>Rear gate on a utility trailer</figcaption>
+          </figure>
+          <figure class="work-square" data-reveal>
+            <img src="images/trailer-repair-1400.jpg"
+                 srcset="images/trailer-repair-800.jpg 800w, images/trailer-repair-1400.jpg 1400w"
+                 sizes="(max-width: 960px) 100vw, 50vw"
+                 alt="Freshly welded and painted bracket on a trailer tongue next to a toolbox"
+                 width="1400" height="1867" loading="lazy">
+            <figcaption>Trailer tongue repair, welded and painted</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <!-- REVIEWS -->
-    <section class="section section-dark reviews">
-      <div class="wrap reviews-inner">
-        <div class="rating">
-          <span class="rating-num">5.0</span>
-          <span class="stars big" aria-label="5 out of 5 stars">★★★★★</span>
-          <span class="rating-sub">Rated 5 stars by customers on Google</span>
+    <!-- SHOP -->
+    <section id="shop" class="section shop">
+      <div class="wrap shop-inner">
+        <figure class="shop-photo" data-reveal>
+          <img src="images/shop.jpg"
+               srcset="images/shop-800.jpg 800w, images/shop.jpg 1086w"
+               sizes="(max-width: 960px) 100vw, 45vw"
+               alt="The new Red Welds shop, a dark steel building with the Red Welds sign above the garage door"
+               width="1086" height="1448" loading="lazy">
+        </figure>
+        <div class="shop-copy">
+          <h2 data-reveal>The new shop</h2>
+          <p data-reveal>Red Welds just moved into a brand new shop with room for bigger projects. Pull your trailer up to the bay door, or drop off the part that broke.</p>
+          <p data-reveal>When you call, you talk to the welder doing the work. Straight answers, fair prices, and your equipment back when we said it would be.</p>
+          <a class="text-link" href="https://www.google.com/search?q=Red+Welds+welder+(479)+601-2786" target="_blank" rel="noopener" data-reveal>Read our 5.0-star Google reviews</a>
         </div>
-        <a class="btn btn-ghost" href="https://www.google.com/search?q=Red+Welds+welder+(479)+601-2786" target="_blank" rel="noopener">Read our Google reviews</a>
+      </div>
+    </section>
+
+    <!-- QUOTE (live thing) -->
+    <section id="quote" class="section quote">
+      <div class="wrap quote-inner">
+        <div class="quote-copy">
+          <h2 data-reveal>Text us the job</h2>
+          <p class="quote-sub" data-reveal>Pick what you need, add a note, then send it with a photo. We'll text back with a price and a time.</p>
+        </div>
+        <form class="quote-form" id="quote-form" action="sms:+14796012786" data-reveal>
+          <fieldset>
+            <legend>What do you need?</legend>
+            <div class="chips">
+              <label><input type="radio" name="job" value="trailer work" checked><span>Trailer work</span></label>
+              <label><input type="radio" name="job" value="a repair weld"><span>A repair</span></label>
+              <label><input type="radio" name="job" value="custom fabrication"><span>Custom build</span></label>
+              <label><input type="radio" name="job" value="on-site / industrial welding"><span>On-site or industrial</span></label>
+              <label><input type="radio" name="job" value="mobile welding at my place"><span>Mobile welding</span></label>
+              <label><input type="radio" name="job" value="something else"><span>Something else</span></label>
+            </div>
+          </fieldset>
+          <label class="field">
+            <span>Tell us about it (optional)</span>
+            <textarea name="note" rows="3" placeholder="e.g. Cracked trailer tongue, 16 ft utility trailer"></textarea>
+          </label>
+          <div class="preview" aria-live="polite">
+            <span class="preview-label">Your text</span>
+            <p id="preview-text">Hi Red Welds, I need help with trailer work. I'll attach a photo.</p>
+          </div>
+          <div class="quote-actions">
+            <a class="btn btn-ink" id="sms-link" href="sms:+14796012786">Open text message</a>
+            <a class="btn btn-outline-light" href="tel:+14796012786">Or call (479) 601-2786</a>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -179,23 +216,18 @@
     <section id="contact" class="section contact">
       <div class="wrap contact-inner">
         <div>
-          <p class="eyebrow"><span class="spark"></span>Get in touch</p>
-          <h2>Got a project?<br><span class="red">Let's talk.</span></h2>
-          <p class="section-sub">The fastest way to a quote is a text with a photo of the job.</p>
-          <a class="phone-big" href="tel:+14796012786">(479) 601-2786</a>
-          <div class="cta-row">
-            <a class="btn btn-red" href="tel:+14796012786">Call now</a>
-            <a class="btn btn-ghost" href="sms:+14796012786">Send a text</a>
-          </div>
+          <h2 data-reveal>Call or text anytime</h2>
+          <a class="phone-big" href="tel:+14796012786" data-reveal>(479) 601-2786</a>
+          <p class="section-sub" data-reveal>Leave a message if we're under a hood. We call back.</p>
         </div>
-        <div class="hours card">
+        <div class="hours" data-reveal>
           <h3>Shop hours</h3>
           <dl>
-            <div><dt>Monday – Friday</dt><dd>9:00 AM – 5:00 PM</dd></div>
+            <div><dt>Monday to Friday</dt><dd>9 AM – 5 PM</dd></div>
             <div><dt>Saturday</dt><dd>By appointment</dd></div>
             <div><dt>Sunday</dt><dd>Closed</dd></div>
           </dl>
-          <p class="note">Need mobile welding outside these hours? Call and ask.</p>
+          <p class="note">Need on-site work outside these hours? Call and ask.</p>
         </div>
       </div>
     </section>
@@ -203,19 +235,21 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <img src="images/logo-transparent.png" alt="Red Welds" width="72" height="63" loading="lazy">
-      <p>&copy; <span id="year">2026</span> Red Welds. All rights reserved.</p>
-      <a href="tel:+14796012786">(479) 601-2786</a>
+    <div class="wrap">
+      <p class="footer-name" aria-hidden="true">Red Welds</p>
+      <div class="footer-row">
+        <p>&copy; <span id="year">2026</span> Red Welds</p>
+        <a href="tel:+14796012786">(479) 601-2786</a>
+      </div>
     </div>
   </footer>
 
-  <!-- Mobile sticky action bar -->
-  <div class="mobile-bar">
+  <!-- Mobile action bar (shows after the hero scrolls away) -->
+  <div class="mobile-bar" id="mobile-bar">
     <a href="tel:+14796012786" class="btn btn-red">Call</a>
-    <a href="sms:+14796012786" class="btn btn-ghost">Text</a>
+    <a href="#quote" class="btn btn-ghost">Text a photo</a>
   </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js" defer></script>
 </body>
 </html>
