@@ -12,7 +12,7 @@ A one-page static site for Red Welds (welding & metal fabrication). No build ste
 Open `index.html` in a browser.
 
 ## Things to confirm / edit in `index.html`
-- **Shop hours**: currently Mon–Fri 9–5, Sat by appointment, Sun closed (only "opens 9 AM Mon" was confirmed)
+- **Shop hours**: Mon–Fri 9–5:30 confirmed; Sat "by appointment" and Sun "closed" still to confirm
 - **Services list**: adjust to what the shop actually offers
 - **Service area / address**: not listed yet
 - **Photo captions** in the Recent work section
