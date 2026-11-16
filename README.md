@@ -18,8 +18,8 @@ Open `index.html` in a browser.
 - **Photo captions** in the Recent work section
 - More job photos can be dropped into `images/` and added to the Recent work grid
 
-## Publish for free with GitHub Pages
-Repo **Settings → Pages → Source: Deploy from a branch → `main` / root**.
+## Hosting
+Served by GitHub Pages from `main` at https://redweldsnwa.com (the `CNAME` file holds the domain). DNS is at Cloudflare: four A records for `@` (185.199.108–111.153) and a `www` CNAME to `arredondo-juan.github.io`, all set to DNS only.
 
 ## Logo files
 `brand/` holds the Red Welds logo for print and signs: full logo (on dark, on light, on black, one-colour black and white), the RW mark on its own, and a square icon. SVGs scale to any size; PNGs are included for quick use.
