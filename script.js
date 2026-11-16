@@ -49,13 +49,21 @@
     items.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // Mobile action bar appears once the hero is out of view
+  // Mobile action bar: shown between the hero and the contact section,
+  // hidden where the page already shows the phone number
   var bar = document.getElementById('mobile-bar');
-  var hero = document.getElementById('hero');
-  if (bar && hero && 'IntersectionObserver' in window) {
+  var watched = ['hero', 'contact'].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  if (bar && watched.length && 'IntersectionObserver' in window) {
+    var visible = {};
     new IntersectionObserver(function (entries) {
-      bar.classList.toggle('show', !entries[0].isIntersecting);
-    }, { threshold: 0.05 }).observe(hero);
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      bar.classList.toggle('show', !visible.hero && !visible.contact);
+    }, { threshold: 0.05 }).observe(watched[0]);
+    var io2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      bar.classList.toggle('show', !visible.hero && !visible.contact);
+    }, { threshold: 0 });
+    watched.slice(1).forEach(function (el) { io2.observe(el); });
   } else if (bar) {
     bar.classList.add('show');
   }
