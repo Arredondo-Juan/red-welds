@@ -6,7 +6,7 @@ A one-page static site for Red Welds (welding & metal fabrication). No build ste
 - `index.html`: page content (services, recent work, the shop, quote texter, hours)
 - `styles.css`: all styling
 - `script.js`: the "Text us the job" message builder, scroll reveals, mobile call bar
-- `images/`: job photos (each at 800px and 1400px), shop photo, logo, favicons
+- `images/`: job photos (each at 800px and 1400px), shop photo, logo (`logo-mark.svg`, `logo-full.svg`), favicons
 
 ## Preview
 Open `index.html` in a browser.
@@ -20,3 +20,6 @@ Open `index.html` in a browser.
 
 ## Publish for free with GitHub Pages
 Repo **Settings → Pages → Source: Deploy from a branch → `main` / root**.
+
+## Logo files
+`brand/` holds the Red Welds logo for print and signs: full logo (on dark, on light, on black, one-colour black and white), the RW mark on its own, and a square icon. SVGs scale to any size; PNGs are included for quick use.

@@ -87,7 +87,7 @@ p { margin: 0 0 16px; }
 /* Header: plain bar */
 .site-header { position: sticky; top: 0; z-index: 50; background: var(--bg); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
-.brand img { height: 50px; width: auto; }
+.brand img { height: 36px; width: auto; }
 .nav { display: flex; gap: 32px; }
 .nav a { text-decoration: none; font-weight: 600; font-size: var(--fs-body); color: var(--muted); transition: color .15s; }
 .nav a:hover { color: var(--ink); }
@@ -190,13 +190,9 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 12px; 
 .hours dd { margin: 0; font-weight: 700; text-align: right; }
 .hours .note { margin: 16px 0 0; font-size: var(--fs-small); color: var(--muted); }
 
-/* Footer: the name returns */
+/* Footer: the full logo returns */
 .site-footer { padding: clamp(150px, 12vw, 176px) 0 32px; }
-.footer-name {
-  font-family: var(--display); text-transform: uppercase; line-height: .85;
-  font-size: clamp(4.5rem, 19.5vw, 16rem); letter-spacing: -0.02em; margin: 0 0 24px;
-  color: var(--red); white-space: nowrap;
-}
+.footer-logo { width: clamp(240px, 36vw, 440px); height: auto; margin: 0 0 40px; }
 .footer-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: var(--fs-small); }
 .footer-row p { margin: 0; }
 .footer-row a { color: var(--ink); font-weight: 700; text-decoration: none; }
@@ -225,7 +221,7 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 12px; 
   :root { --fs-body: 1.0625rem; }
   .header-call { display: none; }
   .header-inner { height: 64px; justify-content: center; }
-  .brand img { height: 42px; }
+  .brand img { height: 30px; }
   .hero { padding-top: 16px; }
   .lede { font-size: 1.125rem; }
   .cta-row .btn, .quote-actions .btn { flex: 1 1 100%; }
