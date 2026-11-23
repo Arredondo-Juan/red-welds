@@ -177,7 +177,7 @@ figcaption { font-size: var(--fs-small); color: var(--muted); margin-top: 12px; 
 .contact-photo img { aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 60%; width: 100%; }
 .contact-copy .phone-big { font-size: clamp(3rem, 6.4vw, 6rem); }
 .contact-copy .section-sub { max-width: 30em; }
-.contact-copy .text-link { margin: 4px 0 36px; }
+.review-links { display: flex; flex-wrap: wrap; gap: 12px 32px; margin: 4px 0 36px; }
 .contact-copy .hours { max-width: 520px; }
 .phone-big {
   display: block; font-family: var(--display); font-size: var(--fs-display); line-height: 1;
